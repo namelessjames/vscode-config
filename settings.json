@@ -1,30 +1,19 @@
 {
-    "editor.fontFamily": "'MesloGS NF', 'MesloLGM Nerd Font Mono', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "MesloLGMDZ Nerd Font Mono",
     "editor.formatOnSave": true,
     "editor.minimap.showSlider": "always",
     "editor.minimap.maxColumn": 30,
     "editor.minimap.scale": 2,
     "editor.minimap.renderCharacters": false,
+    "editor.minimap.enabled": false,
     "editor.fontLigatures": true,
     "editor.fontWeight": "300",
-    "editor.fontSize": 16,
-    "terminal.integrated.fontFamily": "MesloLGM Nerd Font Mono",
+    "editor.fontSize": 13,
+    "editor.lineHeight": 1.7,
+    "editor.lineNumbers": "relative",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.guides.bracketPairs": "active",
     "editor.renderWhitespace": "selection",
-    "window.autoDetectColorScheme": false,
-    "workbench.colorTheme": "Dark Modern",
-    "workbench.editor.tabActionLocation": "right",
-    "workbench.list.smoothScrolling": false,
-    "workbench.productIconTheme": "icons-carbon",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.tree.expandMode": "singleClick",
-    "workbench.iconTheme": "symbols",
-    "workbench.tree.indent": 20,
-    "window.zoomLevel": 1,
-    "symbols.hidesExplorerArrows": false,
-    "debug.onTaskErrors": "debugAnyway",
-    "diffEditor.ignoreTrimWhitespace": false,
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
     "editor.find.addExtraSpaceOnTop": false,
     "editor.inlineSuggest.enabled": true,
@@ -37,8 +26,30 @@
     "editor.codeActionsOnSave": {
         "source.fixAll": "never",
         "source.fixAll.eslint": "explicit",
-        "source.organizeImports": "never"
+        "source.organizeImports": "always"
     },
+    "workbench.colorTheme": "Ayu Dark Bordered",
+    "workbench.editor.tabActionLocation": "right",
+    "workbench.list.smoothScrolling": false,
+    "workbench.productIconTheme": "icons-carbon",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.tree.expandMode": "singleClick",
+    "workbench.iconTheme": "symbols",
+    "workbench.tree.indent": 20,
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.limit.value": 5,
+    "window.autoDetectColorScheme": false,
+    "window.zoomLevel": 1,
+    "window.dialogStyle": "custom",
+    "window.nativeTabs": true, // this is great, macOS only
+    "window.title": "${rootName}", // this make tabs more readable
+    "window.titleBarStyle": "custom",
+    "symbols.hidesExplorerArrows": true,
+    "debug.onTaskErrors": "debugAnyway",
+    "diffEditor.ignoreTrimWhitespace": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "files.eol": "\n",
@@ -49,16 +60,12 @@
     "git.enableSmartCommit": true,
     "git.untrackedChanges": "separate",
     "scm.diffDecorationsGutterWidth": 2,
+    "terminal.integrated.fontFamily": "MesloLGMDZ Nerd Font Mono",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.fontWeight": "300",
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.tabs.enabled": true,
-    "workbench.editor.closeOnFileDelete": true,
-    "workbench.editor.highlightModifiedTabs": true,
-    "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.perEditorGroup": true,
-    "workbench.editor.limit.value": 5,
     "search.exclude": {
         "**/*.snap": true,
         "**/*.svg": true,
@@ -83,10 +90,6 @@
         "**/CHANGELOG*": true,
         "**/LICENSE*": true
     },
-    "window.dialogStyle": "custom",
-    "window.nativeTabs": true, // this is great, macOS only
-    "window.title": "${rootName}", // this make tabs more readable
-    "window.titleBarStyle": "custom",
     "extensions.autoUpdate": "onlyEnabledExtensions",
     "emmet.showSuggestionsAsSnippets": true,
     "emmet.triggerExpansionOnTab": false,
@@ -152,20 +155,6 @@
             "source": "PowerShell",
             "icon": "terminal-powershell",
             "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
-        },
-        "Command Prompt": {
-            "path": [
-                "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe"
-            ],
-            "args": [],
-            "icon": "terminal-cmd"
-        },
-        "Git Bash": {
-            "source": "Git Bash"
-        },
-        "Windows PowerShell": {
-            "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
         }
     },
     "terminal.integrated.defaultProfile.windows": "PowerShell",
@@ -197,6 +186,16 @@
     "redhat.telemetry.enabled": false,
     "workbench.activityBar.location": "hidden",
     "workbench.panel.opensMaximized": "always",
-    "editor.minimap.enabled": false,
-    "javascript.updateImportsOnFileMove.enabled": "always"
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "terminal.integrated.allowedLinkSchemes": [
+        "file",
+        "http",
+        "https",
+        "mailto",
+        "vscode",
+        "vscode-insiders",
+        "docker-desktop"
+    ],
+    "powershell.analyzeOpenDocumentsOnly": true,
+    "powershell.integratedConsole.showOnStartup": false
 }
