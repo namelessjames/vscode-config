@@ -24,7 +24,7 @@
     "editor.stickyScroll.enabled": false,
     "editor.hover.sticky": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll": "never",
+        "source.fixAll": "always",
         "source.fixAll.eslint": "explicit",
         "source.organizeImports": "always"
     },
@@ -197,5 +197,7 @@
         "docker-desktop"
     ],
     "powershell.analyzeOpenDocumentsOnly": true,
-    "powershell.integratedConsole.showOnStartup": false
+    "powershell.integratedConsole.showOnStartup": false,
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false
 }
